@@ -1,0 +1,10 @@
+{
+    "name": "your-project",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "devDependencies": {
+      "@netlify/plugin-lighthouse": "^1.0.0"
+    }
+  }

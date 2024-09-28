@@ -1,0 +1,11 @@
+[build]
+  publish = "public"                     # This should match the directory where your files are located.
+  command = "composer install"            # This installs any dependencies defined in composer.json.
+
+[context.production.environment]
+  PHP_VERSION = "8.0"                     # Set the required PHP version.
+
+[[redirects]]
+  from = "/*"                             # Redirect all traffic.
+  to = "/index.php"                       # Ensure this points to your entry point file.
+  status = 200                             # Use a 200 status for success.
